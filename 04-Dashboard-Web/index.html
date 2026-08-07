@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MEB AI Asistan — Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+  <!-- LOGIN -->
+  <section id="view-login" class="view login-view">
+    <div class="login-card">
+      <p class="brand">MEB AI</p>
+      <h1>Asistan Paneli</h1>
+      <p class="sub">Veli ve öğretmenler için sohbet geçmişi, dil ve model ayarları.</p>
+      <form id="login-form" autocomplete="off">
+        <label>Kullanıcı adı
+          <input id="username" name="username" autocomplete="off" spellcheck="false" value="" required />
+        </label>
+        <label>Şifre
+          <input id="password" name="password" type="password" autocomplete="off" spellcheck="false" value="" required />
+        </label>
+        <button type="submit" class="btn primary">Giriş yap</button>
+        <p id="login-error" class="error" hidden></p>
+      </form>
+      <p class="hint">Demo veli: <code>veli / veli1</code> · öğretmen: <code>ogretmen / ogretmen1</code></p>
+    </div>
+  </section>
+
+  <!-- APP -->
+  <section id="view-app" class="view app-view" hidden>
+    <header class="topbar">
+      <div class="top-brand">
+        <span class="brand">MEB AI</span>
+        <span class="top-sub">Yönetim</span>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Dil">
+        <button type="button" id="lang-tr" class="chip active" data-lang="Türkçe">TR</button>
+        <button type="button" id="lang-en" class="chip" data-lang="English">EN</button>
+      </div>
+      <div class="top-user">
+        <span id="user-label"></span>
+        <button type="button" id="btn-logout" class="btn ghost">Çıkış</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="side">
+        <div class="device-card">
+          <p class="side-label">Cihaz durumu</p>
+          <div id="device-face" class="device-face state-idle" data-state="idle">
+            <div class="face-core"></div>
+            <div class="face-rings"></div>
+            <div class="face-bars">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <p id="device-label" class="device-label">Bekliyor</p>
+        </div>
+        <nav class="nav">
+          <button type="button" class="nav-btn active" data-panel="history">Sohbet geçmişi</button>
+          <button type="button" class="nav-btn" data-panel="students">Öğrenci & sınıf</button>
+          <button type="button" class="nav-btn" data-panel="settings">Model & dil</button>
+        </nav>
+      </aside>
+
+      <section id="panel-history" class="panel">
+        <div class="panel-head">
+          <h2>Sohbet geçmişi</h2>
+          <button type="button" id="btn-refresh" class="btn ghost">Yenile</button>
+        </div>
+        <div id="chat-list" class="chat-list"></div>
+      </section>
+
+      <section id="panel-students" class="panel" hidden>
+        <div class="panel-head">
+          <h2>Öğrenci ve sınıf</h2>
+          <button type="button" id="btn-refresh-students" class="btn ghost">Yenile</button>
+        </div>
+        <p class="sub" style="margin-top:0">Öğrenci adını buraya yazın; sınıfı seçin. Cihaz yüzü ve “Merhaba / Rica ederim” cevapları bu isme göre kişiselleşir.</p>
+        <div class="student-grid">
+          <label>Öğrenci adı
+            <input id="student-name" type="text" maxlength="40" placeholder="Örn. Elif" autocomplete="off" />
+          </label>
+          <label>Sınıf (1–12 veya Tümü)
+            <select id="grade-select">
+              <option value="0">Tümü — tüm sınıflar</option>
+              <option value="1">1. sınıf — ilkokul</option>
+              <option value="2">2. sınıf — ilkokul</option>
+              <option value="3">3. sınıf — ilkokul</option>
+              <option value="4">4. sınıf — ilkokul</option>
+              <option value="5">5. sınıf — ortaokul</option>
+              <option value="6">6. sınıf — ortaokul</option>
+              <option value="7">7. sınıf — ortaokul</option>
+              <option value="8">8. sınıf — ortaokul</option>
+              <option value="9">9. sınıf — lise</option>
+              <option value="10">10. sınıf — lise</option>
+              <option value="11">11. sınıf — lise</option>
+              <option value="12">12. sınıf — lise</option>
+            </select>
+          </label>
+        </div>
+        <button type="button" id="btn-save-student" class="btn primary" style="width:auto;min-width:160px">Kaydet</button>
+        <p id="student-band" class="device-label"></p>
+        <p id="students-msg" class="ok" hidden></p>
+        <h3 class="log-title">Değişiklik kaydı (veli paneli)</h3>
+        <div id="activity-log" class="chat-list"></div>
+      </section>
+
+      <section id="panel-settings" class="panel" hidden>
+        <div class="panel-head">
+          <h2>Model ve dil ayarları</h2>
+        </div>
+        <form id="settings-form" class="settings-form">
+          <label>STT modeli
+            <select name="stt_model">
+              <option value="whisper-large-v3-turbo">whisper-large-v3-turbo (Groq)</option>
+              <option value="whisper-large-v3">whisper-large-v3</option>
+            </select>
+          </label>
+          <label>LLM sağlayıcı
+            <select name="llm_provider">
+              <option value="groq">Groq (hızlı)</option>
+              <option value="ollama">Ollama (yerel)</option>
+            </select>
+          </label>
+          <label>LLM modeli
+            <input name="llm_model" />
+          </label>
+          <label>TTS Türkçe
+            <input name="tts_voice_tr" />
+          </label>
+          <label>TTS İngilizce
+            <input name="tts_voice_en" />
+          </label>
+          <label>RAG eşik (RRF)
+            <input name="score_threshold" />
+          </label>
+          <button type="submit" class="btn primary">Kaydet</button>
+          <p id="settings-msg" class="ok" hidden></p>
+        </form>
+      </section>
+    </main>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

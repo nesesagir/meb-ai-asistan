@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+groq
+qdrant-client
+fastembed
+ollama
+edge-tts
+python-multipart
+pandas
+numpy
+pydantic
+python-dotenv
+pydub
+miniaudio
+websockets
