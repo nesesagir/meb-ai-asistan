@@ -24,6 +24,14 @@ Web dashboard (parent / teacher)
 
 Large book/vector dumps are not in this repo; rebuild them locally when needed.
 
+## On the device
+
+ESP32 client on hardware (prototype photos):
+
+| Ready | Type a question | Grade |
+| --- | --- | --- |
+| ![Hazırım](docs/cihaz/hazirim.png) | ![Yaz](docs/cihaz/yaz.png) | ![Sınıf](docs/cihaz/sinif.png) |
+
 ## Setup
 
 ### Backend
