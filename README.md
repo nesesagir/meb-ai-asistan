@@ -20,9 +20,10 @@ Web dashboard (parent / teacher)
 | `02-Backend-Sunucu/` | API, voice pipeline, dashboard host |
 | `03-Veri-RAG/dokumantasyon/` | How book data is prepared |
 | `04-Dashboard-Web/` | Dashboard UI |
-| `06-Sunum-Tek-Tus/` | Local start / stop scripts |
 
 Large book/vector dumps are not in this repo; rebuild them locally when needed.
+
+There is no hosted demo. Run the backend locally and flash the ESP32 to try the assistant.
 
 ## On the device
 
