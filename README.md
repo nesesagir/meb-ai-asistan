@@ -1,6 +1,6 @@
 # MEB AI Asistan
 
-End-to-end voice assistant prototype for education: custom ESP32-S3 hardware, FastAPI backend with RAG, and a small web dashboard.
+Education voice assistant with our own schematic and 50×72 mm ESP32-S3 board (in fabrication), FastAPI backend with RAG, and a small web dashboard.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ Web dashboard (parent / teacher)
 | `02-Backend-Sunucu/` | API, voice pipeline, dashboard host |
 | `03-Veri-RAG/dokumantasyon/` | How book data is prepared |
 | `04-Dashboard-Web/` | Dashboard UI |
-| `05-Donanim-PCB/` | Custom 50×72 mm PCB (EasyEDA Standard) |
+| `05-Donanim-PCB/` | Own schematic and 50×72 mm PCB |
 | `06-Kasa-3D/` | 58×90×20 mm case (OpenSCAD) |
 
 Large book/vector dumps are not in this repo; rebuild them locally when needed.
@@ -60,7 +60,7 @@ Dashboard: `http://127.0.0.1:8001/dashboard/`
 
 ## Hardware
 
-Custom board, not a devkit. Locked envelope:
+Own circuit, not a ready-made ESP32 kit. Board is in fabrication.
 
 - PCB **50 × 72 × 1.6 mm**, 4 layers, Type-C on the bottom edge (center)
 - ESP32-S3-WROOM-1 on the **top / screen** side; antenna keep-out is the top 15 mm
