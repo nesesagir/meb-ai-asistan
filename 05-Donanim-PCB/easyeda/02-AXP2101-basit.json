@@ -1,0 +1,42 @@
+{
+  "head": {
+    "docType": "1",
+    "editorVersion": "6.5.46",
+    "c_para": {},
+    "x": "4000",
+    "y": "3000",
+    "hasIdFlag": true,
+    "newgId": true,
+    "importFlag": 0,
+    "transformList": "",
+    "c_spiceCmd": "",
+    "isSheet": true
+  },
+  "canvas": "CA~1000~1000~#FFFFFF~yes~#CCCCCC~5~1000~1000~line~5~pixel~5~4000~3000",
+  "shape": [
+    "T~L~4000~2780~0~#000000~Arial~14pt~bold~normal~~comment~MEB AI Asistan - 2/5  AXP2101  C3036461~1~start~gge1325~0~",
+    "T~L~4000~2800~0~#333333~Arial~9pt~normal~normal~~comment~Sol: LCSC Parcalari kutusuna C3036461 yaz, U2 olarak yerlestir.~1~start~gge1326~0~",
+    "T~L~4000~2816~0~#333333~Arial~9pt~normal~normal~~comment~DCDC1 -> 3V3. ALDO1 AUD_3V3. ALDO2 MIC_3V3. ALDO3 LCD_3V3. BLDO1 CTP_3V3.~1~start~gge1327~0~",
+    "T~L~4000~2832~0~#333333~Arial~9pt~normal~normal~~comment~VBUS Type-C. BAT Li-Po. PWROK -> ESP_EN. SDA/SCK -> I2C.~1~start~gge1328~0~",
+    "N~4000~2880~0~#000080~VBUS~gge1329~start~4002~2880~Times New Roman~7pt~0",
+    "N~4000~2900~0~#000080~VBAT~gge1330~start~4002~2900~Times New Roman~7pt~0",
+    "N~4000~2920~0~#000080~SYS~gge1331~start~4002~2920~Times New Roman~7pt~0",
+    "N~4000~2940~0~#000080~3V3~gge1332~start~4002~2940~Times New Roman~7pt~0",
+    "N~4000~2960~0~#000080~ESP_EN~gge1333~start~4002~2960~Times New Roman~7pt~0",
+    "N~4000~2980~0~#000080~I2C_SDA~gge1334~start~4002~2980~Times New Roman~7pt~0",
+    "N~4000~3000~0~#000080~I2C_SCL~gge1335~start~4002~3000~Times New Roman~7pt~0",
+    "N~4000~3020~0~#000080~AUD_3V3~gge1336~start~4002~3020~Times New Roman~7pt~0",
+    "N~4000~3040~0~#000080~MIC_3V3~gge1337~start~4002~3040~Times New Roman~7pt~0",
+    "N~4000~3060~0~#000080~LCD_3V3~gge1338~start~4002~3060~Times New Roman~7pt~0",
+    "N~4000~3080~0~#000080~CTP_3V3~gge1339~start~4002~3080~Times New Roman~7pt~0",
+    "N~4000~3100~0~#000080~PWRON~gge1340~start~4002~3100~Times New Roman~7pt~0",
+    "N~4000~3120~0~#CC0000~GND~gge1341~start~4002~3120~Times New Roman~7pt~0"
+  ],
+  "BBox": {
+    "x": 3750,
+    "y": 2780,
+    "width": 700,
+    "height": 550
+  },
+  "colors": []
+}

@@ -1,0 +1,22 @@
+MEB AI Asistan PCB — kilitli mekanik
+
+Kart: 50 x 72 x 1.6 mm, 4 katman. Orijin sol-alt, Type-C kenarı = alt (Y0).
+
+Parça merkezleri (mm), ekran yüzü = Top:
+  J1 USB-C          25.0,  3.0
+  U1 ESP32-S3       25.0, 54.0  (anten üst, keep-out y=57..72)
+  U2 AXP2101        26.0, 34.0
+  U3 ES7210         40.0, 34.0
+  U4 ES8311         14.0, 34.0
+  U5 NS4150          8.0, 20.0
+  MK1 / MK2         42.0 / 36.0, 16.0  (sağ)
+  L1 1uH            14.0, 42.0
+  J2 FPC 14P         8.0, 44.0  (sol, LCD+CTP)
+
+M2 NPTH Ø2.2 mm: (4,10) (46,10) (4,50) (46,50)
+Kasa hedef: 58 x 90 x 20 mm. Batarya arka yüzde 35 x 34 x 6.5 mm (H1–H4 arası).
+LCD_3V3 ≠ CTP_3V3.
+
+Dosya: 09-PCB-TAM.json
+Harita: A2-YERLESIM.png
+Mekanik: MEB-AI-Asistan-PCB-mekanik.scad

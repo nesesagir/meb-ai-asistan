@@ -1,0 +1,85 @@
+{
+  "head": {
+    "docType": "3",
+    "editorVersion": "6.5.46",
+    "c_para": {},
+    "x": "4000",
+    "y": "3000",
+    "hasIdFlag": true,
+    "newgId": true,
+    "importFlag": 0
+  },
+  "canvas": "CA~1000~1000~#000000~yes~#FFFFFF~10~1000~1000~line~0.5~mil~1~45~~0.5~4098.425~3141.732~0~yes",
+  "shape": [
+    "TRACK~0.2~10~~4000.0 3000.0 4196.85 3000.0 4196.85 3283.465 4000.0 3283.465 4000.0 3000.0~gge2001~0",
+    "TRACK~0.15~3~~4000.0 3224.409 4196.85 3224.409 4196.85 3283.465 4000.0 3283.465 4000.0 3224.409~gge2002~0",
+    "TRACK~0.15~3~~4080.708 3000.0 4116.142 3000.0 4116.142 3027.559 4080.708 3027.559 4080.708 3000.0~gge2003~0",
+    "HOLE~4015.748~3039.37~8.661~gge2004~0",
+    "CIRCLE~4015.748~3039.37~6.299~0.2~3~gge2005~0~~",
+    "HOLE~4181.102~3039.37~8.661~gge2006~0",
+    "CIRCLE~4181.102~3039.37~6.299~0.2~3~gge2007~0~~",
+    "HOLE~4015.748~3196.85~8.661~gge2008~0",
+    "CIRCLE~4015.748~3196.85~6.299~0.2~3~gge2009~0~~",
+    "HOLE~4181.102~3196.85~8.661~gge2010~0",
+    "CIRCLE~4181.102~3196.85~6.299~0.2~3~gge2011~0~~"
+  ],
+  "layers": [
+    "1~TopLayer~#FF0000~true~true~true~",
+    "2~BottomLayer~#0000FF~true~false~true~",
+    "3~TopSilkLayer~#FFCC00~true~false~true~",
+    "4~BottomSilkLayer~#66CC33~true~false~true~",
+    "5~TopPasteMaskLayer~#808080~true~false~true~",
+    "6~BottomPasteMaskLayer~#800000~true~false~true~",
+    "7~TopSolderMaskLayer~#800080~true~false~true~0.3",
+    "8~BottomSolderMaskLayer~#AA00FF~true~false~true~0.3",
+    "10~BoardOutLine~#FF00FF~true~false~true~",
+    "11~Multi-Layer~#C0C0C0~true~false~true~",
+    "12~Document~#FFFFFF~true~false~true~",
+    "13~TopAssembly~#33CC99~true~false~true~",
+    "15~Mechanical~#F022F0~true~false~true~",
+    "21~Inner1~#999966~true~false~true~",
+    "22~Inner2~#008000~true~false~true~"
+  ],
+  "objects": [
+    "All~true~false",
+    "Component~true~true",
+    "Prefix~true~true",
+    "Name~true~false",
+    "Track~true~true",
+    "Pad~true~true",
+    "Via~true~true",
+    "Hole~true~true",
+    "Copper_Area~true~true",
+    "Circle~true~true",
+    "Arc~true~true",
+    "Solid_Region~true~true",
+    "Text~true~true",
+    "Image~true~true",
+    "Rect~true~true",
+    "Dimension~true~true",
+    "Protractor~true~true"
+  ],
+  "BBox": {
+    "x": 4000.0,
+    "y": 3000.0,
+    "width": 196.8503937007874,
+    "height": 283.46456692913387
+  },
+  "preference": {
+    "hideFootprints": "",
+    "hideNets": ""
+  },
+  "DRCRULE": {
+    "Default": {
+      "trackWidth": 1,
+      "clearance": 0.6,
+      "viaHoleDiameter": 2.4,
+      "viaHoleD": 1.2
+    },
+    "isRealtime": false,
+    "isDrcOnRoutingOrPlaceVia": false,
+    "checkObjectToCopperarea": true,
+    "showDRCRangeLine": true
+  },
+  "netColors": {}
+}

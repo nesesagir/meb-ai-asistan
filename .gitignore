@@ -5,6 +5,27 @@
 **/wifi_local.h
 !**/wifi_local.h.example
 
+# EasyEDA generator cache (LCSC API dumps)
+05-Donanim-PCB/tools/_cache/
+
+# Firmware local backups
+01-Cihaz-Yazilimi/_YEDEK*/
+
+# EasyEDA / autorouter scratch (not board source)
+05-Donanim-PCB/easyeda/_*
+05-Donanim-PCB/easyeda/out_test.txt
+05-Donanim-PCB/easyeda/ICE-AKTAR*.txt
+05-Donanim-PCB/easyeda/*.dsn
+05-Donanim-PCB/tools/*.dsn
+05-Donanim-PCB/tools/freerouting_extract/
+05-Donanim-PCB/tools/*.msi
+05-Donanim-PCB/tools/_setclip.ps1
+05-Donanim-PCB/tools/finish_stage2.py
+05-Donanim-PCB/tools/ratline_repair.py
+
+# Personal drafts
+06-Kasa-3D/KIZA-MESAJLAR.txt
+
 # Python
 venv/
 .venv/
