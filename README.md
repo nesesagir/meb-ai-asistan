@@ -67,8 +67,11 @@ Custom board, not a devkit. Locked envelope:
 - M2 holes Ø2.2 mm at (4,10) (46,10) (4,50) (46,50) from the Type-C bottom-left origin
 - Case target **58 × 90 × 20 mm**; battery **35 × 34 × 6.5 mm** on the back, between the four bosses
 - Mechanical check file: `05-Donanim-PCB/easyeda/MEB-AI-Asistan-PCB-mekanik.scad`
+- Schematic sheets: `05-Donanim-PCB/easyeda/01-*.json` … `09-PCB-TAM.json` (open in EasyEDA Standard)
+- Factory Gerber (JLCPCB order): `05-Donanim-PCB/Uretim.zip`
+- Case size envelope: `06-Kasa-3D/kasa.scad` (not the print-ready model)
 
-Production Gerbers live at JLCPCB, not in this repo.
+Print-ready case STLs are not in this repo until the 3D designer delivers them.
 
 ## Stack
 

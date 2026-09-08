@@ -1,5 +1,5 @@
-// MEB AI Asistan — iki parca kasa (on + arka)
-// Birim: mm. OpenSCAD: F6 → STL.
+// MEB AI Asistan — kasa ölçü zarfı (mm). Baskı modeli değil.
+// OpenSCAD: F6 ile STL alınabilir. Print-ready kasa Melis'te.
 
 $fn = 28;
 
@@ -8,7 +8,7 @@ L = 90;
 T = 20;
 WALL = 1.4;
 FRONT_T = 5.0;          // 1.4 duvar + 3.6 ekran cebi
-BACK_T = T - FRONT_T;   // 10.0
+BACK_T = T - FRONT_T;   // 15.0
 LIP = 1.0;
 R_CORNER = 3.0;
 
