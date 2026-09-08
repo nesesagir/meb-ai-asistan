@@ -18,5 +18,4 @@ Kasa hedef: 58 x 90 x 20 mm. Batarya arka yüzde 35 x 34 x 6.5 mm (H1–H4 aras�
 LCD_3V3 ≠ CTP_3V3.
 
 Dosya: 09-PCB-TAM.json
-Harita: A2-YERLESIM.png
 Mekanik: MEB-AI-Asistan-PCB-mekanik.scad
