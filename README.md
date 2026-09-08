@@ -1,6 +1,6 @@
 # MEB AI Asistan
 
-End-to-end voice assistant prototype for education content: ESP32 client, FastAPI backend with RAG, and a small web dashboard.
+End-to-end voice assistant prototype for education: custom ESP32-S3 hardware, FastAPI backend with RAG, and a small web dashboard.
 
 ## Architecture
 
