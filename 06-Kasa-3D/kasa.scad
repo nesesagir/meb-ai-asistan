@@ -1,5 +1,4 @@
-// MEB AI Asistan — kasa ölçü zarfı (mm). Baskı modeli değil.
-// OpenSCAD: F6 ile STL alınabilir. Print-ready kasa Melis'te.
+// MEB AI Asistan — kasa (mm). OpenSCAD: F6 → STL.
 
 $fn = 28;
 

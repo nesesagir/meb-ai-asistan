@@ -21,7 +21,7 @@ Web dashboard (parent / teacher)
 | `03-Veri-RAG/dokumantasyon/` | How book data is prepared |
 | `04-Dashboard-Web/` | Dashboard UI |
 | `05-Donanim-PCB/` | Custom 50×72 mm PCB (EasyEDA Standard) |
-| `06-Kasa-3D/` | 58×90×20 mm case (OpenSCAD / STL) |
+| `06-Kasa-3D/` | 58×90×20 mm case (OpenSCAD) |
 
 Large book/vector dumps are not in this repo; rebuild them locally when needed.
 
@@ -69,9 +69,7 @@ Custom board, not a devkit. Locked envelope:
 - Mechanical check file: `05-Donanim-PCB/easyeda/MEB-AI-Asistan-PCB-mekanik.scad`
 - Schematic sheets: `05-Donanim-PCB/easyeda/01-*.json` … `09-PCB-TAM.json` (open in EasyEDA Standard)
 - Factory Gerber (JLCPCB order): `05-Donanim-PCB/Uretim.zip`
-- Case size envelope: `06-Kasa-3D/kasa.scad` (not the print-ready model)
-
-Print-ready case STLs are not in this repo until the 3D designer delivers them.
+- Case: `06-Kasa-3D/kasa.scad`
 
 ## Stack
 
