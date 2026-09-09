@@ -1,6 +1,6 @@
 # MEB AI Asistan
 
-End-to-end voice assistant prototype for education content: ESP32 client, FastAPI backend with RAG, a completed 50×72 mm PCB design, and a small web dashboard.
+End-to-end voice assistant prototype for education content: ESP32 client, FastAPI backend with RAG, a completed 50×72 mm PCB design, a 3D-printed enclosure, and a small web dashboard.
 
 ## Architecture
 
@@ -21,7 +21,7 @@ Web dashboard (parent / teacher)
 | `03-Veri-RAG/dokumantasyon/` | How book data is prepared |
 | `04-Dashboard-Web/` | Dashboard UI |
 | `05-Donanim-PCB/` | 50×72 mm PCB (schematic and layout complete) |
-| `06-Kasa-3D/` | 58×90×20 mm case (OpenSCAD) |
+| `06-Kasa-3D/` | Print-ready case (STL) and Blender source |
 
 Large book/vector dumps are not in this repo; rebuild them locally when needed.
 
@@ -62,6 +62,8 @@ Dashboard: `http://127.0.0.1:8001/dashboard/`
 
 Custom 50×72 mm board: schematic, layout, and Gerber are complete.
 
+![PCB layout](docs/MEB-AI-Asistan-PCB.png)
+
 - PCB **50 × 72 × 1.6 mm**, 4 layers, Type-C on the bottom edge (center)
 - ESP32-S3-WROOM-1 on the **top / screen** side; antenna keep-out is the top 15 mm
 - M2 holes Ø2.2 mm at (4,10) (46,10) (4,50) (46,50) from the Type-C bottom-left origin
@@ -69,8 +71,10 @@ Custom 50×72 mm board: schematic, layout, and Gerber are complete.
 - Mechanical check file: `05-Donanim-PCB/easyeda/MEB-AI-Asistan-PCB-mekanik.scad`
 - Schematic sheets: `05-Donanim-PCB/easyeda/01-*.json` … `09-PCB-TAM.json` (open in EasyEDA Standard)
 - Gerber: `05-Donanim-PCB/Uretim.zip`
-- Case: `06-Kasa-3D/kasa.scad`
+- Case (print-ready): `06-Kasa-3D/on_govde.stl`, `06-Kasa-3D/arka_kapak.stl`
+- Case source: `06-Kasa-3D/final.blend`
+- Case envelope: `06-Kasa-3D/kasa.scad`
 
 ## Stack
 
-Python · FastAPI · Qdrant · Groq · Edge TTS · ESP32 · EasyEDA · OpenSCAD · JavaScript
+Python · FastAPI · Qdrant · Groq · Edge TTS · ESP32 · EasyEDA · OpenSCAD · Blender · JavaScript
